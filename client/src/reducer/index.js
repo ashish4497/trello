@@ -1,11 +1,23 @@
+import { LOGIN_USER, REGISTER_USER } from "../action/type";
 const initialState = {
-  article: [],
+  user: [],
 };
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case "addEventListener": {
-      return state;
+    case LOGIN_USER: {
+      console.log(action.data.user, "inside reducer");
+      return {
+        ...state,
+        user: action.data.user,
+      };
     }
+    // case REGISTER_USER: {
+    //   console.log(action.data.user, "inside reducer");
+    //   return {
+    //     ...state,
+    //     user: action.data.user,
+    //   };
+    // }
     default:
       return state;
   }

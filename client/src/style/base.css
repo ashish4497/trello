@@ -1,9 +1,175 @@
 body {
-  max-width: 1260px;
   margin: 0 auto;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Pangolin", cursive;
 }
 
 li {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 1.8rem 0;
+}
+
+.margin {
+  margin: 0rem 1.4rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.grid-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Header {
+  background-color: #1f72c1;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.left-side .fab {
+  font-size: 2rem;
+  color: white;
+}
+
+.left-side .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.left-side h1 {
+  color: white;
+}
+
+.right-side h3 {
+  margin-left: 1.2rem;
+}
+
+.right-side h3 {
+  color: white;
+}
+
+.login_form img {
+  height: 4rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  background-color: #1f72c1;
+}
+
+.hero .hero-col-1 {
+  color: white;
+}
+
+.hero .hero-col-1 h2 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  line-height: 1.5;
+}
+
+.hero .hero-col-1 p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.subscribe_letter .email {
+  outline: none;
+  padding: 1.2rem 6rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.subscribe_letter ::-webkit-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 0;
+}
+
+.subscribe_letter :-ms-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 0;
+}
+
+.subscribe_letter ::-ms-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 0;
+}
+
+.subscribe_letter ::placeholder {
+  font-size: 1.1rem;
+  padding-left: 0;
+}
+
+.btn {
+  background-color: #61bd4f;
+  border-color: #61bd4f;
+  border-radius: 0.2rem;
+  color: white;
+  padding: 1.1rem 1.8rem;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-left: 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: 0;
 }
 /*# sourceMappingURL=base.css.map */

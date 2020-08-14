@@ -4,13 +4,12 @@ const User = require("../models/user");
 const jwt = require("jsonwebtoken");
 
 //signUp post request to register user
-router.post("/", (req, res, next) => {
+router.post("/signup", (req, res, next) => {
   const newUser = new User(req.body);
   newUser.save((err, User) => {
     if (err) {
-      res.send(err);
+      res.json(err);
     }
-    // res.redirect('/login')
     res.json({ User, sucess: true, message: "Regester sucess" });
   });
 });
