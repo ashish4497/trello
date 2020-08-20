@@ -5,10 +5,10 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case LOGIN_USER: {
-      console.log(action.data.user, "inside reducer");
+      console.log(action.payload, "inside reducer");
       return {
         ...state,
-        user: action.data.user,
+        user: action.payload,
       };
     }
     // case REGISTER_USER: {

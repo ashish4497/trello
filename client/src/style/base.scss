@@ -43,8 +43,18 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  // grid-gap: 10%;
+}
 // Import All files
 @import "./header.scss";
 @import "./login.scss";
 @import "./signup.scss";
 @import "./hero.scss";
+@import "./trelloHeader.scss";
+@import "./trelloMain.scss";
+@import "./trelloBoard.scss";
+@import "./trelloRecentview.scss";

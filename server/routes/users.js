@@ -16,8 +16,8 @@ router.post("/signup", (req, res, next) => {
 
 //login
 router.post("/login", (req, res) => {
-  const { email, password } = req.body;
-  User.findOne({ email }, (err, user) => {
+  const { username, password } = req.body;
+  User.findOne({ username }, (err, user) => {
     if (err) {
       return res.json({ err });
     }

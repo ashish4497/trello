@@ -1,7 +1,9 @@
 import React from "react";
+import Header from "./Header";
 function Hero() {
   return (
     <>
+      <Header />
       <section className="hero">
         <div className="hero-container">
           <div className="flex padding">

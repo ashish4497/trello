@@ -28,7 +28,7 @@ export const login = (data, cb) => (dispatch) => {
     .then((res) => res.json())
     .then((data) => {
       console.log(data, "inside action login");
-      dispatch({ type: LOGIN_USER, data });
+      dispatch({ type: LOGIN_USER, payload: data });
       cb(true);
     });
 };

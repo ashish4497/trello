@@ -18,6 +18,7 @@ class Signup extends React.Component {
       [e.target.name]: e.target.value,
     });
   };
+
   handleSubmit = (e) => {
     console.log(this.props.dispatch);
     e.preventDefault();
@@ -27,6 +28,7 @@ class Signup extends React.Component {
       })
     );
   };
+
   render() {
     return (
       <>

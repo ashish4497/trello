@@ -1,4 +1,5 @@
 import React from "react";
+import { login } from "../action";
 import { connect } from "react-redux";
 class Login extends React.Component {
   constructor(props) {
@@ -13,8 +14,17 @@ class Login extends React.Component {
       [e.target.name]: e.target.value,
     });
   };
-  handleSubmit = () => {
+  handleSubmit = (e) => {
+    e.preventDefault();
     console.log(this.props, "check the pros");
+    this.props.dispatch(login(this.state));
+    // const userToken = this.props.user.token;
+    console.log(this.props.history, "check the history");
+    if (this.props.user.token) {
+      this.props.history.push("/dashboard");
+    } else {
+      alert("Enter The User Detail");
+    }
   };
   render() {
     return (
@@ -55,4 +65,7 @@ class Login extends React.Component {
     );
   }
 }
-export default connect()(Login);
+const mapStateToProps = (state) => {
+  return state;
+};
+export default connect(mapStateToProps)(Login);
